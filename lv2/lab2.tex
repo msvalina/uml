@@ -14,18 +14,43 @@
 \item
     Customer
     \begin{description}
-    \item[]Person who is registred on the web page and is potential buyer.
+    \item[]Customer is an actor who is registred on the web page and is a potential buyer, he can use the system to browse
+    through the available property list an place purchase orders. 
     \end{description}
 \item
-    Salesman
+    Seller
     \begin{description}
-    \item[]Person koji se brine o održavanju stranice. Dodaje nove recorode, obajavljuje vjesti. Potvrđuje naruđbe i šalje pakete..
+    \item[]Seller is an actor who is deals with the purchase orders and confirms them.
+    \end{description}
+\item
+    Web admin
+    \begin{description}
+    \item[]Web admin is an actor who manages the content of the web page, adds new content, updates the news and sends monthly propaganda.
     \end{description}
 \end{itemize}
 {\bf Use cases}:
 \begin{itemize}
 \item
-    Buy record online
+    Name: Buy record online \\
+    Initiator: Customer \\
+    Goal: Buy a record at the online shop 
+    \begin{enumerate}
+    \item Customer browses the web page for a record
+    \item Customer decides which record(s) to buy
+    \item Customer places the record(s) in the basket
+    \item The system sends the order to the seller for procesing
+    \item The seller confirms the order to the system
+    \item The system sends the confirmation with the invoice to the customer
+    \end{enumerate}
+    Extensions:
+    \begin{enumerate}
+    \item Requested record is out of stock
+        \begin{enumerate}
+        \item System allow customer to choose diferent record
+        \item Resume at 1
+        \end{enumerate}
+    \end{enumerate}
+    
     \begin{description}
     \item[asd]
    Customer chooses a record and puts it in a basket after he is done choosing he proceeds to checkout.
