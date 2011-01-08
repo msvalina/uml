@@ -3,71 +3,100 @@
 \usepackage[T1]{fontenc}
 \title{Assignment 2: Use Case Modelling}
 \date{\today}
-\author{Marijan McSvalina \\ Damir Jelić}
+\author{Marijan Svalina \\ Damir Jelić}
+
 \begin{document}
+
 \maketitle 
 
 \setcounter{section}{2}
-\subsection{gna}
-{\bf Actors}:
-\begin{itemize}
-\item
-    Customer
-    \begin{description}
-    \item[]Customer is an actor who is registred on the web page and is a potential buyer, he can use the system to browse
-    through the available property list an place purchase orders. 
-    \end{description}
-\item
-    Seller
-    \begin{description}
-    \item[]Seller is an actor who is deals with the purchase orders and confirms them.
-    \end{description}
-\item
-    Web admin
-    \begin{description}
-    \item[]Web admin is an actor who manages the content of the web page, adds new content, updates the news and sends monthly propaganda.
-    \end{description}
-\end{itemize}
-{\bf Use cases}:
-\begin{itemize}
-\item
-    Name: Buy record online \\
-    Initiator: Customer \\
-    Goal: Buy a record at the online shop 
-    \begin{enumerate}
-    \item Customer browses the web page for a record
-    \item Customer decides which record(s) to buy
-    \item Customer places the record(s) in the basket
-    \item The system sends the order to the seller for procesing
-    \item The seller confirms the order to the system
-    \item The system sends the confirmation with the invoice to the customer
-    \end{enumerate}
-    Extensions:
-    \begin{enumerate}
-    \item Requested record is out of stock
-        \begin{enumerate}
-        \item System allow customer to choose diferent record
-        \item Resume at 1
-        \end{enumerate}
-    \end{enumerate}
-    
-    \begin{description}
-    \item[asd]
-   Customer chooses a record and puts it in a basket after he is done choosing he proceeds to checkout.
-    \end{description}
-\item
-    Listen sample online
-\item
-    Pre-order record
-\item 
-    Search online store
-\item 
-    Rate the record
-    \begin{description}
-    \item[] While viewing the detailed info of a record the customer has the option to rate
-    the record on a scale from 0 to over 9000.
-    \end{description}
-\end{itemize}
-\subsection{gna2}
-asdfadf
+\subsection{Identification}
+
+\begin{description}
+    \item[Actors:] \hfil
+    \begin{itemize}
+    \item
+    %tu nam treba jos valda web stranica kao samostalni glumac... ^^
+        Customer
+        \begin{description}
+            \item[]Customer is an actor who is registred on the web page and is a potential buyer, 
+            he can use the system to browse through the available 
+            property list an place purchase orders. 
+        \end{description}
+    \item
+        Seller
+        \begin{description}
+            \item[]Seller is an actor who is deals with the purchase orders and confirms them.
+        \end{description}
+    \item
+        Web admin
+        \begin{description}
+            \item[]Web admin is an actor who manages the content of the web page, 
+            adds new content, updates the news and sends monthly propaganda.
+        \end{description}
+    \end{itemize}
+
+    % ovo treba bit u tom formatu kao sto pise na vjezbama... 
+    % mogo si i procitat...
+
+    \item[Use cases:] \hfil
+    \begin{itemize}
+    \item
+        \begin{description}
+            \item[Name:]Buy record online 
+            \item[Initiator:]Customer
+            \item[Goal:]Buy a record at the online shop 
+            \begin{enumerate}
+                \item Customer browses the web page for a record
+                \item Customer decides which record(s) to buy
+                \item Customer places the record(s) in the basket
+                \item The system sends the order to the seller for procesing
+                \item The seller confirms the order to the system
+                \item The system sends the confirmation with the invoice to the customer
+            \end{enumerate}
+            \item[Extensions:] \hfil
+            \begin{enumerate}
+                \item Requested record is out of stock
+                \begin{enumerate}
+                    \item System allow customer to choose diferent record
+                    \item Resume at 1
+                \end{enumerate}
+            \end{enumerate}
+        \end{description}
+
+    \item
+        \begin{description}
+            \item[Name:]Listen sample online 
+            \item[Initiator:]Customer
+            \item[Goal:]Listen to a record before buying it
+            \begin{enumerate}
+                \item Customer browses the web page for a record
+                \item Customer chooses to listen to a sample from the record
+                \item System provides an audio stream to the customer
+            \end{enumerate}
+        \end{description}
+
+    \item
+        \begin{description}
+            \item[Name:]Send promotional e-mail 
+            \item[Initiator:]Web-admin 
+            \item[Goal:]Send some promotional material to customers 
+        \end{description}
+
+    \item 
+        \begin{description}
+            \item[Name:]Search online store
+            \item[Initiator:]Customer
+            \item[Goal:]Search the database\dots
+        \end{description}
+    \item 
+        \begin{description}
+        \item[Name:]Rate a record 
+        \item[Initiator:]Customer 
+        \item[Goal:] 
+        \end{description}
+    \end{itemize}
+\end{description}
+
+\subsection{Diagram}
 \end{document}
