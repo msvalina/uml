@@ -26,18 +26,10 @@
     \item
         Seller
         \begin{description}
-            \item[]Seller is an actor who is deals with the purchase orders and confirms them.
-        \end{description}
-    \item
-        Web admin
-        \begin{description}
-            \item[]Web admin is an actor who manages the content of the web page, 
-            adds new content, updates the news and sends monthly propaganda.
+            \item[]Seller is an actor who is deals with the purchase orders and confirms them,
+		    he also manages the web page and writes promotionaln material.
         \end{description}
     \end{itemize}
-
-    % ovo treba bit u tom formatu kao sto pise na vjezbama... 
-    % mogo si i procitat...
 
     \item[Use cases:] \hfil
     \begin{itemize}
@@ -74,16 +66,26 @@
                 \item Customer chooses to listen to a sample from the record
                 \item System provides an audio stream to the customer
             \end{enumerate}
+    	    \item[Extensions:] \hfil
+	    \begin{enumerate}
+		\item Customers browser doesn't support audio codec
+		\begin{enumerate}
+			\item System prints error message
+		\end{enumerate}
+	    \end{enumerate}
         \end{description}
 
     \item
         \begin{description}
             \item[Name:]Send promotional e-mail 
-            \item[Initiator:]System
+            \item[Initiator:]Seller
             \item[Goal:]Send some promotional material to customers 
 	    \begin{enumerate}
-		\item System periodicaly creates newsletter with newest records
-		\item System periodicaly sends newsletter
+		\item Seller writes newsletter
+		\item Seller requests top selling records from system
+		\item Seller attaches record list to newsletter
+		\item Seller gives the newsletter to the system
+		\item System sends the newsletter to the customers
 		\end{enumerate}
         \end{description}
 
@@ -113,4 +115,6 @@
 \end{description}
 
 \subsection{Diagram}
+\begin{center}
+\end{center}
 \end{document}
