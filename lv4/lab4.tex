@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{\textbf{\Large\color{MidnightBlue}Design and Modelling of Software Systems 
+    \hfill Page: \thepage \\ ETFOS, 2011}}
+
+\setlength{\parindent}{0cm}
+
+\begin{document}
+\large
+Laboration Assignment No. 4\\
+Submission Date - \yyyymmdddate \today \\
+Damir, Jelić, damir.jelic@etfos.hr \\
+Marijan, Svalina, % mail tvoj...
+\\
+\rule{\linewidth}{0.1mm}
+
+\setcounter{section}{4}
+\subsection{Chess class diagram}
+\begin{figure}[htb]
+    \begin{center}
+        \setlength\fboxsep{0pt}
+        \fbox{\includegraphics[scale=0.6]{class_diagram.png}}
+        \caption{Chess class diagram}
+        \label{fig:class_diag}
+    \end{center}
+\end{figure}
+
+\begin{description}
+    \item[]
+    In this laboration we started with the class \emph{Chess}.
+    Chess is a two player board game, so we added the 
+    classes \emph{Player} and \emph{Board}.
+    \item[]
+    Each player has serveral different pieces, we created for each piece a class
+    but the different pieces share some common properties so we created a abstract class
+    called \emph{Piece} and generalized the different pieces into it.
+\end{description}
+
+\end{document}
