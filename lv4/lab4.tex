@@ -40,9 +40,28 @@ Marijan, Svalina, % mail tvoj...
     Chess is a two player board game, so we added the 
     classes \emph{Player} and \emph{Board}.
     \item[]
-    Each player has serveral different pieces, we created for each piece a class
-    but the different pieces share some common properties so we created a abstract class
-    called \emph{Piece} and generalized the different pieces into it.
+    Each player has several different pieces, for each piece we created a class
+    but the different pieces share some common properties so we created a general abstract class
+    called \emph{Piece}. 
+    \item[]
+    The \emph{Chess} class only has the attribute \emph{player\_turn} which 
+    remembers which player makes the next move.
+    \item[]
+    The class \emph{Player} has the attributes \emph{color}, which identifies
+    the color the player has choosen to play with, and \emph{timer} which serves as a
+    counter if the chess game is played with time control.
+    \item[]
+    The \emph{Piece} class has a color attribute for the color of the piece (black or white),
+    the \emph{alive} attribute shows if the piece is still on the board or if the piece
+    has been captured and the \emph{position} attribute which holds the current position of
+    the piece on the board.
+    \item[]
+        The multiplicities are as follows:
+        \begin{itemize}
+            \item The chess game can have 1 or 2 players (eg. if one is playing against oneself)
+            \item The chess game can only have 1 board
+            \item The board can hold 0 to 32 pieces
+        \end{itemize}
 \end{description}
 
 \end{document}
