@@ -24,6 +24,28 @@ Marijan Svalina, msvalina@etfos.hr
 \rule{\linewidth}{0.1mm}
 \setcounter{section}{5}
 \subsection{KWIC use case diagram}
+\begin{description}
+    \item[Actors:] \hfil
+    \begin{itemize}
+    \item
+        Librarian
+        \begin{description}
+            \item[] Librarian is an actor who is in charge of generating KWIC data.
+        \end{description}
+    \end{itemize}
+
+    \item[Use cases:] \hfil
+        \begin{description}
+            \item[Name:] Generate KWIC data
+            \item[Initiator:] Librarian
+            \item[Goal:]The Librarian wants to generate keywords for one particular context
+                 \begin{enumerate}
+                    \item The librarian enters a number of titles
+                    \item The librarian enters an empty title (to indicate that all titles have been entered) 
+                    \item The system outputs an alphabetically sorted list of all circular shifts of all the titles
+                 \end{enumerate}
+        \end{description}
+
 
 \subsection{KWIC class diagram}
 
