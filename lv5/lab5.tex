@@ -23,8 +23,8 @@ Marijan, Svalina, msvalina@etfos.hr
 \\
 \rule{\linewidth}{0.1mm}
 \setcounter{section}{5}
-\begin{description}
 \subsection{KWIC use case diagram}
+\begin{description}
     \item[Actors:] \hfil
     \begin{itemize}
     \item
@@ -48,6 +48,7 @@ Marijan, Svalina, msvalina@etfos.hr
                  \end{enumerate}
         \end{description}
         \item[Use Case Diagram:] \hfil
+\end{description}
      \begin{figure}[htb]
          \begin{center}
              \setlength\fboxsep{0pt}
@@ -55,11 +56,10 @@ Marijan, Svalina, msvalina@etfos.hr
              \caption{Simple use case diagram}
              \label{fig:class_diag}
         \end{center}
-\end{figure}
+    \end{figure}
 
-
+\newpage
 \subsection{KWIC class diagram}
-    \item[class diagram]    
      \begin{figure}[htb]
          \begin{center}
              \setlength\fboxsep{0pt}
@@ -67,21 +67,45 @@ Marijan, Svalina, msvalina@etfos.hr
              \caption{Class diagram}
              \label{fig:class_diag}
         \end{center}
-\end{figure}
+    \end{figure}
+\begin{description}
+   \begin{itemize}
+        \item getRotated()
+            \begin{description}
+                Returns a copy of the title, after one circural shift.
+            \end{description}
+         \item isBefore()
+            \begin{description}
+                Returns true if the title is alphabetically before the argument title.
+            \end{description}
+        \item isEmpty()
+            \begin{description}
+                Returns true if the title is empty.
+            \end{description}
 
+  \end{itemize}
 
+\end{description}
+
+\newpage
 \subsection{KWIC sequance diagram}
-
-    \item[class diagram]    
-     \begin{figure}[htb]
-         \begin{center}
+    \begin{figure}[htb]
+       \begin{center}
              \setlength\fboxsep{0pt}
-             \fbox{\includegraphics[scale=0.9]{sequence_diagram.png}}
+             \fbox{\includegraphics[scale=0.76]{sequence_diagram.png}}
              \caption{Sequence diagram}
              \label{fig:class_diag}
-        \end{center}
-\end{figure}
-
+       \end{center}
+    \end{figure}
+\begin{description}
+   \begin{itemize}
+            \begin{description}
+                Afrer Labrarian enters first title, isEmpty() function is called. Since
+                its not empty the title is added to the list.
+                Title then gets rotatetd and all combinations are added to the list.
+                After second empty title is enterd, list is sorted and then printed.
+                
+            \end{description}
 \end{description}
 
 
