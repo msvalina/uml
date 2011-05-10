@@ -1,1 +1,26 @@
-maki i ja radimo labose, natjero me na git...
+Sve laboratorijske vježbe iz modeliranja za 2010 godinu.
+
+Izvještaji su pisani u latexu.
+Prve dvije nisu u standardnom formatu i izrađene su sa "dia" (http://dia-installer.de/). 
+Ostatak je u standardnom formatu i rađen je sa "umbrello 2.0" (http://uml.sourceforge.net/).
+
+Ocijene:
+    ______________________________________________________________________
+    |  Labos   |   Ocjena    |                Komentar                   |
+    |--------------------------------------------------------------------|
+    |   Lv1    |    100 %    |                   OK                      |
+    |--------------------------------------------------------------------|
+    |   Lv2    |     80 %    | Da koristite neki alat ne bi bilo greške  |
+    |--------------------------------------------------------------------|
+    |   Lv3    |    100 %    |                   OK, dobro!              |
+    |--------------------------------------------------------------------|
+    |          |             | Malo mi nedostaju atributi za neke klase  |
+    |   Lv4    |     90 %    | npr. ploča bi trebala imati polja, figure |
+    |          |             | pravila za pomicanje                      |
+    |--------------------------------------------------------------------|
+    |   Lv5    |    100 %    |                   OK                      |
+    |--------------------------------------------------------------------|
+    |   Lv6    |    100 %    |                   OK                      |
+    |--------------------------------------------------------------------|
+
+    Total = 95.00 %

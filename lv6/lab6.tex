@@ -46,8 +46,8 @@ Marijan, Svalina, msvalina@etfos.hr
 \end{description}
 \begin{description}
     \item[]
-    The \emph{is\_call} attribute is a bool variable wich identifies if the user
-    want's to unlock the door or call a apartment user.
+    The \emph{is\_call} attribute is a bool variable which identifies if the user
+    wants to unlock the door or call a apartment user.
     \item[]
     The \emph{lock\_code} and the \emph{ap\_code} are containers for valid 
     door unlock codes and apartment numbers.
@@ -79,13 +79,13 @@ Marijan, Svalina, msvalina@etfos.hr
 \end{figure}
 \begin{description}
     \item[]
-    We start with the \emph{wait for keypress} state, if we press the \emph{C} key the system
+    We start with the \emph{wait for key press} state, if we press the \emph{C} key the system
     sets the \emph{is\_call} variable to 0 and stays in this state, 
     if we press a numeric key we go to the \emph{key 1} state.
     \item[]
     From the \emph{key 1} state we can proceed with a numeric key
     to the \emph{key 2} state from which also with a 
-    numeric key procced to the \emph{key 3} state.
+    numeric key proceed to the \emph{key 3} state.
     \item[]
     In the \emph{key 3} state we can proceed with a numeric key but depending on the
     \emph{is\_call} attribute we go to different states. If the \emph{is\_call} is true
@@ -97,24 +97,24 @@ Marijan, Svalina, msvalina@etfos.hr
     \item[]
     If we don't change states from the \emph{key 1-4} states in 10 seconds 
     we proceed to the \emph{reset} state which sets the \emph{is\_call} attribute
-    to true and goes to the \emph{wait for keypress} state.
+    to true and goes to the \emph{wait for key press} state.
     \item[]
     The \emph{verificate lock code} state and the \emph{verificate phone code} state
     are used for code verification, if the code is rejected both go to the 
     \emph{wait for keypress} state.
     \item[]
-    If the lock code is accepted we go to the \emph{unlocked} state wich unlocks the
-    door upon entry and locks it upon exit, we go back to the \emph{wait for keypress}
+    If the lock code is accepted we go to the \emph{unlocked} state which unlocks the
+    door upon entry and locks it upon exit, we go back to the \emph{wait for key press}
     after 30 seconds and set the \emph{is\_call} attribute to 1.
     \item[]
     If the phone code is accepted we go to the \emph{call} state. The \emph{call} state
-    tries to call the apartement user if the connection is established it proceeds to the
+    tries to call the apartment user if the connection is established it proceeds to the
     \emph{talk} state if it fails to establish a connection it goes to the 
-    \emph{wait for keypress} state.
+    \emph{wait for key press} state.
     \item[]
-    In the \emph{talk} state we can go back to the \emph{wait for keypress} state
+    In the \emph{talk} state we can go back to the \emph{wait for key press} state
     if the apartment user hangs up or if we press the \emph{R} key.
     \item[]
-    A stop state isn't needed because the phone lock should always wait for a keypress.
+    A stop state isn't needed because the phone lock should always wait for a key press.
 \end{description}
 \end{document}
